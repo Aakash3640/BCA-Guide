@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/home">
+
+
+<!--        Login-->
+        <activity android:name="com.example.BCAGuide.Loginf"
+            android:exported="false" />
+        <activity
+            android:name="com.example.BCAGuide.ForgetPasswordf"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.BCAGuide.GoogleSignf"
+            android:exported="false" />
+        <activity
+            android:name="com.example.BCAGuide.Phonef"
+            android:exported="false" />
+        <activity
+            android:name="com.example.BCAGuide.Phone_Mainf"
+            android:exported="false" />
+        <activity
+            android:name="com.example.BCAGuide.PhoneVerifyf"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.BCAGuide.Registrationf"
+            android:exported="false" />
+
+
+
+
+        <activity
+            android:name="com.example.BCAGuide.Syllabus"
+            android:exported="false" />
+        <activity
+            android:name="Sem.SEM6.VB_Net.vb_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM6.VB_Net.vb_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM6.E_commerce.Ecom_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM6.E_commerce.Ecom_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM6.CGMA6.Cgma_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM6.CGMA6.Cgma_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem6.VB_net"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem6.CGMA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem6.E_Commerce"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM5.PHP.php_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM5.PHP.php_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM5.JAVA.java_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM5.JAVA.java_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem5.PHP"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem5.JAVA"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem5.DM"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem5.CN"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM5.DMATH.D_math_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM5.CN.cn_notes"
+            android:exported="false" />
+        <activity
+            android:name="Sem.SEM5.CN.cn_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM5.DMATH.D_math_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM5.CN.cn_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.SPM.Spm_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.SPM.Spm_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.PUNJABI_sem4.Punjabi_book_sem4"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.PUNJABI_sem4.Punjabi_paper_sem4"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.OS.os_notes"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.OS.os_practical_file"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.OS.os_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.OS.os_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.DBMS.dbms_practical_File"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.DBMS.dbms_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM4.DBMS.dbms_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem4.Punjabi_sem4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem4.Spm"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem4.Os"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem4.dbms"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem3.isd"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem3.hcp_sem3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem3.ds"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem3.conm"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM3.ISD.isd_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.ISD.isd_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.HCP.hcp_paper_sem3"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.HCP.hcp_book_sem3"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.DS.ds_notes"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.DS.ds_practical_file"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.DS.ds_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.DS.ds_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.CONM.conm_pratical_file"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.CONM.conm_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM3.CONM.conm_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.FWP.FWP_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.FWP.FWP_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.CO.Co_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.CO.Co_notes"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.CO.Co_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.English_Sem2.English_notes_sem2"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.English_Sem2.English_book_sem2"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.English_Sem2.English_paper_sem2"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem2.FWP_sem2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem2.Co_sem2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem2.English_sem2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM2.Cpp.Cpp_Practical_file"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.Cpp.Cpp_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.Cpp.Cpp_Notes"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM2.Cpp.Cpp_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem2.Cpp_sem2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM1.CFCS.CFCS_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem1.CFCS_sem1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM1.CFCS.CFCS_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.Statistic.Statistic_paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.Statistic.Statistic_book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem1.Statistic_sem1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM1.English.Paper.Paper_2020"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.English.Paper.Paper_2017"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem1.English_sem1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.SEM1.C.Practical_file.C_Practical_file"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Paper.Paper_2018"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Paper.C_papers"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Paper.Paper_2020dec"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Paper.Paper_2017"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Book.C_book_tutpoint"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Notes.English_notes"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Book.C_Pro_Book"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Book.C_book_letusc"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Book.C_book_theprolang"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.Paper_study_notes.sem1.C_sem1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Sem6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Sem5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Sem4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Sem2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Sem3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Sem.Sem1"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.example.bcaguide.Home"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/home" />
+        <activity
+            android:name="com.example.bcaguide.Flash_screen"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/flash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Sem.SEM1.English.Paper.English_Paper"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

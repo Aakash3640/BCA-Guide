@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism_background"
+    tools:context="Sem.SEM1.C.Paper.C_papers">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/paper2017"
+        android:layout_width="200sp"
+        android:layout_height="250sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="2017    Paper"
+            android:textSize="40sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/paper2018"
+        android:layout_width="200sp"
+        android:layout_height="250sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="307dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="2018    Paper"
+            android:padding="20sp"
+            android:textSize="40sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/paper2020dec"
+        android:layout_width="200sp"
+        android:layout_height="250sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="597dp"
+        android:layout_marginEnd="7dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="2020     Dec    Paper"
+            android:textSize="34sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Sem.SEM1.English.Paper.English_Paper">
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_margin="70sp"
+        android:id="@+id/english_2017">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="English 2017 Paper"
+            android:gravity="center"
+            android:textSize="40sp"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/english_2020"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="English 2020 Paper"
+            android:textSize="40sp" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+</RelativeLayout>

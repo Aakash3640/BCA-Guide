@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bcaguide.Home"
+    android:background="@color/teal_200">
+
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/logoutuser"
+            android:layout_marginLeft="10sp"
+            app:cardBackgroundColor="#FFEB3B"
+            app:cardCornerRadius="15sp"
+            app:cardElevation="30sp"
+            >
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_gravity="center"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:src="@drawable/baseline_logout"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/web"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="102dp"
+            app:cardBackgroundColor="#E53935"
+            app:cardCornerRadius="25sp"
+            app:cardElevation="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="WebSite"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="226dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#F4BD3A"
+            app:cardCornerRadius="20sp"
+            app:cardElevation="10sp">
+
+            <TextView
+                android:id="@+id/syllabus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="center"
+                android:text="BCA Syllabus"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/one"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/a"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_marginStart="16dp"
+            app:cardBackgroundColor="#FBFBFA"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/c"
+            app:layout_constraintEnd_toStartOf="@+id/b"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.426">
+
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="160sp"
+
+                android:gravity="center"
+                android:text="1st Sem"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="C, CS, English, Statistic"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/b"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_margin="5sp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/d"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/a"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.426">
+
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="160sp"
+
+                android:gravity="center"
+                android:text="2nd Sem"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="C++, CO, English, FWP"
+                android:textColor="@color/black"
+
+                android:textSize="13sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_margin="5sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="132dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/e"
+            app:layout_constraintEnd_toStartOf="@+id/d"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a">
+
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="160sp"
+
+                android:gravity="center"
+                android:text="3rd Sem"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Conm, DS, HCP, ISD"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/d"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_margin="5sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/f"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c"
+            app:layout_constraintTop_toBottomOf="@+id/b">
+
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="160sp"
+
+                android:gravity="center"
+                android:text="4th Sem"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Dbms, HCP, Os, Spm"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/e"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_margin="5sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="92dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/f"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c">
+
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="160sp"
+
+                android:gravity="center"
+                android:text="5th Sem"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="CN, DM, JAVA, PHP"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/f"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_margin="5sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="4dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/e"
+            app:layout_constraintTop_toBottomOf="@+id/d">
+
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="160sp"
+
+                android:gravity="center"
+                android:text="6th Sem"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="65sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="CGMA, EC, VB.Net"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

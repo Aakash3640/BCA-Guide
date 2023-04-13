@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Sem.Paper_study_notes.sem2.Cpp_sem2">
+
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="260sp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:text="C++ "
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="serif"
+            android:text="Programming"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="272dp"
+            android:layout_height="151dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="9dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/working" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/first"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cppprogram"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/cppbook"
+            app:layout_constraintEnd_toStartOf="@+id/cpppaper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="#3EC11A">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Program"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130sp"
+                android:gravity="center"
+                android:text="C++ Basic Code"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cpppaper"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/cppnotes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cppprogram"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="#1E88E5">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:fontFamily="cursive"
+                android:gravity="center_horizontal"
+                android:text="Paper"
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140sp"
+                android:gravity="center"
+                android:text="Sample Paper"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cppbook"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cppnotes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cppprogram"
+            app:neumorph_backgroundColor="#FB8C00">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Book"
+                android:textColor="#000000"
+                android:textSize="43sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140sp"
+                android:gravity="center"
+                android:text="Study Material"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cppnotes"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cppbook"
+            app:layout_constraintTop_toBottomOf="@+id/cpppaper"
+            app:neumorph_backgroundColor="#E53935">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Notes"
+                android:textColor="#000000"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130sp"
+                android:gravity="center"
+                android:text="Handwritten Notes"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

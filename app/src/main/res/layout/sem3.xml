@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Sem.Sem3">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="260sp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:text="Bca"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="87dp"
+            android:fontFamily="serif"
+            android:text="3rd Sem"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="serif"
+            android:text="Guide"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:layout_width="161dp"-->
+<!--            android:layout_height="156dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="80dp"-->
+<!--            android:layout_marginEnd="26dp"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/working" />-->
+
+    </RelativeLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/first"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="3dp">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/conm"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/hcp"
+            app:layout_constraintEnd_toStartOf="@+id/ds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="#3EC11A">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="CONM"
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130sp"
+                android:gravity="center"
+                android:text="Computer Oriented Numerical Method"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/ds"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/isd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/conm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="#1E88E5">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:fontFamily="cursive"
+                android:gravity="center_horizontal"
+                android:text="DS"
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140sp"
+                android:gravity="center"
+                android:text="Data Structure"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/hcp"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/isd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conm"
+            app:neumorph_backgroundColor="#FB8C00">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="HCP"
+                android:textColor="#000000"
+                android:textSize="43sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120sp"
+                android:gravity="center"
+                android:text="History and Culture of Punjab"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/isd"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/hcp"
+            app:layout_constraintTop_toBottomOf="@+id/ds"
+            app:neumorph_backgroundColor="#E53935">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="ISD"
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130sp"
+                android:gravity="center"
+                android:text="Information System Design and Implementation"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ACC1"
+    tools:context=".Profile">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="-47dp"
+        app:cardBackgroundColor="#F8B926"
+        app:cardCornerRadius="200sp"
+        app:cardElevation="10sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="343dp"
+        android:layout_marginEnd="-96dp"
+        android:layout_marginBottom="-5dp"
+        app:cardBackgroundColor="#039BE5"
+        app:cardCornerRadius="200sp"
+        app:cardElevation="10sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="162dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-72dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="749dp"
+        app:cardBackgroundColor="#F4511E"
+        app:cardCornerRadius="200sp"
+        app:cardElevation="10sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="102dp"
+        app:cardBackgroundColor="#E53935"
+        app:cardCornerRadius="200sp"
+        app:cardElevation="10sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="#45ED20"
+        app:cardCornerRadius="200sp"
+        app:cardElevation="10sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380sp"
+        android:layout_height="760sp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30sp"
+
+        app:cardElevation="10sp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_marginLeft="150sp"
+            android:layout_marginTop="30sp"
+            app:cardCornerRadius="100sp"
+            app:cardElevation="20sp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/userimage"
+                android:src="@drawable/user" />
+        </androidx.cardview.widget.CardView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:id="@+id/pname"
+    android:layout_marginTop="300sp"
+    android:layout_marginLeft="50sp"
+    android:textStyle="bold"
+    android:textSize="20sp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:id="@+id/pemail"
+            android:layout_marginTop="400sp"
+            android:layout_marginLeft="50sp"
+            android:textSize="20sp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:id="@+id/pphone"
+            android:textStyle="bold"
+            android:layout_marginTop="500sp"
+            android:layout_marginLeft="50sp"
+            android:textSize="20sp"/>
+
+
+
+<soup.neumorphism.NeumorphButton
+    android:layout_width="140sp"
+    android:layout_height="80sp"
+    android:text="Update"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginTop="600sp"
+    android:layout_marginLeft="130sp"
+    android:id="@+id/update"
+    android:gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
