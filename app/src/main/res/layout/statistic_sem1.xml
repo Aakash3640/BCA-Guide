@@ -13,33 +13,24 @@
         android:layout_height="260sp">
 
 
-
-
-
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:layout_height="141dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginBottom="17dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="62dp"
             android:fontFamily="serif"
+            android:gravity="center"
             android:text="Statistics 1st Sem"
-            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp"
             android:textStyle="bold|italic" />
 
-<!--        <com.airbnb.lottie.LottieAnimationView-->
-<!--            android:layout_width="272dp"-->
-<!--            android:layout_height="151dp"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="22dp"-->
-<!--            android:layout_marginEnd="32dp"-->
-<!--            app:lottie_autoPlay="true"-->
-<!--            app:lottie_loop="true"-->
-<!--            app:lottie_rawRes="@raw/working" />-->
 
     </RelativeLayout>
 
@@ -58,9 +49,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/statisticpaper"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
-
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/statisticbook"
@@ -96,8 +86,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/statisticbook"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="50dp"
 
             android:layout_marginEnd="6dp"

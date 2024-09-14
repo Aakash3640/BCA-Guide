@@ -15,43 +15,22 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="161dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="102dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="serif"
-            android:text="Computer\nOriented "
-            android:textColor="@color/black"
-            android:textSize="35sp"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginBottom="17dp"
-            android:fontFamily="serif"
-            android:textColor="@color/black"
-            android:text="Numerical Method"
-            android:textSize="35sp"
-            android:textStyle="bold|italic" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="148dp"
-            android:layout_height="158dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="32dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/working" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="47dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/conm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold|italic" />
+
 
     </RelativeLayout>
 
@@ -68,8 +47,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/paper"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="60dp"
             android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/praticalfile"
@@ -103,8 +82,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/book"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="2dp"
@@ -139,8 +118,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/praticalfile"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="65dp"
@@ -155,9 +134,9 @@
                 android:layout_height="match_parent"
                 android:fontFamily="cursive"
                 android:gravity="center"
-                android:text="Practical File"
+                android:text="@string/practical_file"
                 android:textColor="#000000"
-                android:textSize="40sp"
+                android:textSize="@dimen/_22ssp"
                 android:textStyle="bold" />
 
         </soup.neumorphism.NeumorphCardView>

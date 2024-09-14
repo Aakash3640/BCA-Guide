@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#337DEA"
-    tools:context="com.example.bcaguide.Flash_screen">
+    android:background="#12345E"
+    tools:context="com.example.bcaguide.main.Flash_screen">
 
 
     <TextView
@@ -13,22 +13,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/faster_one"
-        android:text="Bca Guide"
-        android:textColor="#000000"
+        android:fontFamily="cursive"
+        android:text="@string/bca_guide"
+        android:textColor="@color/ic_launcher_background"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.237" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/logo"
-        android:layout_width="318dp"
-        android:layout_height="257dp"
+        android:layout_width="@dimen/_310sdp"
+        android:layout_height="@dimen/_200sdp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -36,14 +36,13 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/desciption"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bca"
         app:layout_constraintVertical_bias="0.0"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/coffe_laptop"
         app:lottie_loop="true"
-        >
+        app:lottie_rawRes="@raw/flash_icon">
 
 
     </com.airbnb.lottie.LottieAnimationView>
@@ -54,35 +53,15 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="74dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="74dp"
-        android:layout_marginBottom="39dp"
-        android:textSize="20sp"
-        android:text="BCA Paper, Book, Notes"
-        android:textColor="#F3F3F6"
-        android:fontFamily="@font/lemon"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/website"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <TextView
-        android:id="@+id/website"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="84dp"
-
-        android:text="Learnfworld.blogspot.com"
-        android:textColor="#FDD835"
+        android:layout_marginBottom="76dp"
+        android:text="@string/bca_paper_book_notes"
+        android:textColor="#F6E864"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desciption" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

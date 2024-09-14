@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bcaguide">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <supports-screens
-        android:smallScreens="true"
-        android:normalScreens="true"
-        android:largeScreens="true"
-        android:xlargeScreens="true"
         android:anyDensity="true"
-        />
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
 
     <application
         android:allowBackup="true"
@@ -19,38 +19,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/home">
-
-
-<!--        Login-->
-        <activity android:name="com.example.BCAGuide.Loginf"
+        <activity
+            android:name=".Sem.SEM5.DMATH.D_math_paper_2021"
             android:exported="false" />
         <activity
-            android:name="com.example.BCAGuide.ForgetPasswordf"
-            android:exported="false" />
-
-        <activity
-            android:name="com.example.BCAGuide.GoogleSignf"
-            android:exported="false" />
-        <activity
-            android:name="com.example.BCAGuide.Phonef"
-            android:exported="false" />
-        <activity
-            android:name="com.example.BCAGuide.Phone_Mainf"
-            android:exported="false" />
-        <activity
-            android:name="com.example.BCAGuide.PhoneVerifyf"
-            android:exported="false" />
-
-        <activity
-            android:name="com.example.BCAGuide.Registrationf"
+            android:name=".Sem.SEM5.DMATH.Dmathpaper"
             android:exported="false" />
 
 
 
 
+
+        <!-- Login -->
         <activity
-            android:name="com.example.BCAGuide.Syllabus"
-            android:exported="false" />
+            android:name=".Loginf"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".ForgetPasswordf"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Registrationf"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Profilef"
+            android:exported="true"
+            android:noHistory="true"/>
+        <activity
+            android:name=".main.Syllabus"
+            android:exported="false"
+            android:noHistory="true"/>
         <activity
             android:name="Sem.SEM6.VB_Net.vb_book"
             android:exported="false"
@@ -133,7 +133,7 @@
             android:exported="false"
             android:theme="@style/full_screen" />
         <activity
-            android:name="Sem.SEM5.DMATH.D_math_paper"
+            android:name="Sem.SEM5.DMATH.D_math_paper_2018"
             android:exported="false"
             android:theme="@style/full_screen" />
         <activity
@@ -217,7 +217,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Sem.SEM3.ISD.isd_book"
+            android:name="Sem.SEM3.ISD.isd_notes"
             android:exported="false"
             android:theme="@style/full_screen" />
         <activity
@@ -359,9 +359,13 @@
         <activity
             android:name="Sem.Paper_study_notes.sem1.English_sem1"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name="Sem.SEM1.C.Practical_file.C_Practical_file"
+            android:exported="false"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="Sem.SEM1.C.Notes.C_notes"
             android:exported="false"
             android:theme="@style/full_screen" />
         <activity
@@ -427,18 +431,17 @@
         <activity
             android:name="Sem.Sem1"
             android:exported="false"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.bcaguide.Home"
-            android:exported="false"
+            android:name=".Home"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/home" />
+            android:theme="@style/mainhome" />
         <activity
-            android:name="com.example.bcaguide.Flash_screen"
+            android:name=".main.Flash_screen"
             android:exported="true"
             android:noHistory="true"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/flash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -450,11 +453,6 @@
             android:name="Sem.SEM1.English.Paper.English_Paper"
             android:exported="false"
             android:theme="@style/full_screen" />
-
-            <meta-data
-                android:name="preloaded_fonts"
-                android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>

@@ -13,33 +13,26 @@
         android:layout_height="260sp">
 
 
+        <TextView
+            android:layout_width="365dp"
+            android:layout_height="167dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="serif"
+            android:text="@string/cfcs_1st_sem"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-android:textColor="@color/black"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="17dp"
-        android:fontFamily="serif"
-        android:text="CFCS 1st Sem"
-        android:textSize="40sp"
-        android:textStyle="bold|italic" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="272dp"
-        android:layout_height="151dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="32dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/working" />
-
-</RelativeLayout>
+    </RelativeLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -57,12 +50,10 @@ android:textColor="@color/black"
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/cfcspaper"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
-
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/cbook"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.864"
             app:layout_constraintStart_toStartOf="parent"
@@ -95,14 +86,12 @@ android:textColor="@color/black"
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/cfcsbook"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="50dp"
-
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/cpaper"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

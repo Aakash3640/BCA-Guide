@@ -14,43 +14,22 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="154dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="18dp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="68dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="serif"
-            android:text="C G"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginBottom="4dp"
-            android:fontFamily="serif"
-            android:text="&amp; Multimedia\nApplications"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:textStyle="bold|italic" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="148dp"
-            android:layout_height="158dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="-1dp"
-            android:layout_marginEnd="17dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/laptop_working" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/amp_multimedia_napplications"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold|italic" />
+
 
     </RelativeLayout>
 
@@ -70,9 +49,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/paper"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
-
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/book"
@@ -108,8 +86,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/book"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="30dp"

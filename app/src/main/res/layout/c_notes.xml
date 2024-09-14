@@ -7,12 +7,6 @@
     tools:context="Sem.SEM1.C.Notes.English_notes">
 
 
-<!--    <com.github.barteksc.pdfviewer.PDFView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_margin="20sp"-->
-<!--        android:id="@+id/c_book_pdfviewer"/>-->
-
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

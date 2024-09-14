@@ -12,59 +12,27 @@
         android:layout_height="260sp">
 
 
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="316dp"
+            android:layout_height="154dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
             android:layout_marginLeft="40sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="21dp"
             android:fontFamily="serif"
-            android:text="Bca"
+            android:gravity="center"
+            android:text="@string/_3rd_sem"
             android:textColor="@color/black"
             android:textSize="40sp"
             android:textStyle="bold|italic" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-android:textColor="@color/black"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="38dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="87dp"
-            android:fontFamily="serif"
-            android:text="3rd Sem"
-            android:textSize="40sp"
-            android:textStyle="bold|italic" />
 
-        <TextView
 
-            android:layout_width="wrap_content"
-android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="14dp"
-            android:fontFamily="serif"
-            android:text="Guide"
-            android:textSize="40sp"
-            android:textStyle="bold|italic" />
-
-<!--        <com.airbnb.lottie.LottieAnimationView-->
-<!--            android:layout_width="161dp"-->
-<!--            android:layout_height="156dp"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="80dp"-->
-<!--            android:layout_marginEnd="26dp"-->
-<!--            app:lottie_autoPlay="true"-->
-<!--            app:lottie_loop="true"-->
-<!--            app:lottie_rawRes="@raw/working" />-->
 
     </RelativeLayout>
 
@@ -82,8 +50,8 @@ android:textColor="@color/black"
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/conm"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="15dp"
@@ -117,8 +85,8 @@ android:textColor="@color/black"
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/ds"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="15dp"
@@ -153,8 +121,8 @@ android:textColor="@color/black"
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/hcp"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="2dp"
@@ -189,8 +157,8 @@ android:textColor="@color/black"
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/isd"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="65dp"

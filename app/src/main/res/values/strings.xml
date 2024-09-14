@@ -1,9 +1,67 @@
 <resources>
     <string name="app_name">BCA Guide</string>
 
-    <string name="create">
-        <u>Create Account</u>
+    <string name="create">Create Account
     </string>
+    <string name="bca_guide">Bca Guide</string>
+    <string name="bca_paper_book_notes">BCA Paper, Book, Notes</string>
+    <string name="learnfworld_blogspot_com">Learnfworld.blogspot.com</string>
+    <string name="website">WebSite</string>
+    <string name="bca_syllabus">BCA Syllabus</string>
+    <string name="_1st_sem">1<small><small><sup>st</sup></small></small> Sem</string>
+    <string name="_2nd_sem">2<small><small><sup>nd</sup></small></small> Sem</string>
+    <string name="_3rd_sem">3<small><small><sup>rd</sup></small></small> Sem</string>
+    <string name="_4th_sem">4<small><small><sup>th</sup></small></small> Sem</string>
+    <string name="_5th_sem">5<small><small><sup>th</sup></small></small> Sem</string>
+    <string name="_6th_sem">6<small><small><sup>th</sup></small></small> Sem</string>
+    <string name="c_cs_english_statistic">C, CS, English, Statistic</string>
+    <string name="c_co_english_fwp">C++, CO, English, FWP</string>
+
+    <string name="conm_ds_hcp_isd">Conm, DS, HCP, ISD</string>
+
+    <string name="dbms_hcp_os_spm">Dbms, HCP, Os, Spm</string>
+
+    <string name="cn_dm_java_php">CN, DM, JAVA, PHP</string>
+
+    <string name="cgma_ec_vb_net">CGMA, EC, VB.Net</string>
+
+    <string name="welcome">WELCOME</string>
+    <string name="let_s_get_started">Let\'s get started</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="bca_syllabustext">BCA Syllabus</string>
+    <string name="name">Name</string>
+    <string name="enter_register_email">Enter Register Email</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="please_enter_your_phone_mobile">Please Enter Your Phone Mobile</string>
+    <string name="e_commerce">E-Commerce</string>
+    <string name="fundamental_web_programming">Fundamental Web Programming</string>
+    <string name="operating_nsystem">Operating\nSystem</string>
+    <string name="practical">Practical File</string>
+    <string name="c_basic_code">C Basic Code</string>
+    <string name="email">Email</string>
+    <string name="cfcs_1st_sem"><![CDATA[Computer Fundamentals & Computing Software]]></string>
+    <string name="amp_multimedia_napplications"><![CDATA[Computer Graphic & Multimedia\nApplications]]></string>
+    <string name="cn">Computer Networks</string>
+    <string name="co">Computer Organisation</string>
+    <string name="conm"><![CDATA[Computer Oriented & Numerical Method]]></string>
+    <string name="cppprogramming">C++ Programming</string>
+    <string name="db">Database Management System</string>
+    <string name="mathematical_structure">Discrete Mathematical Structure</string>
+    <string name="hcp"><![CDATA[History & Culture of Punjab]]></string>
+    <string name="isd"><![CDATA[Information System\nDesign & Implementation]]></string>
+    <string name="os">Operating System\nConcepts and Linux</string>
+    <string name="php">Application Development using\nPHP</string>
+    <string name="fwp">Fundamental Web Programming</string>
+    <string name="practical_file">Practical File</string>
+    <string name="todo">TODO</string>
+    <string name="phone">Phone</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
 
 
 </resources>

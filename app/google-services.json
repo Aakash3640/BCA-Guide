@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:845707413998:android:a7b8c40296dbf54c13a6ff",
         "android_client_info": {
-          "package_name": "com.example.firebase"
+          "package_name": "com.example.bcaguide"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "845707413998-qsllr2472fa9b71bpn42co7s46rss5vr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.firebase",
+            "package_name": "com.example.bcaguide",
             "certificate_hash": "4b7973df4064e882a12367b65a817131b19928c4"
           }
         },

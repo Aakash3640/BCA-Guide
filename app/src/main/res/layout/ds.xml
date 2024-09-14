@@ -14,32 +14,26 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="364dp"
+            android:layout_height="125dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="26dp"
             android:layout_marginLeft="40sp"
             android:layout_marginTop="81dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="54dp"
             android:fontFamily="serif"
-            android:text="Data\nStructure"
-            android:textSize="40sp"
+            android:gravity="center"
+            android:text="Data Structure"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_26ssp"
             android:textStyle="bold|italic" />
 
 
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="148dp"
-            android:layout_height="158dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="32dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/working" />
 
     </RelativeLayout>
 
@@ -58,8 +52,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/dspraticalfile"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="15dp"
@@ -93,8 +87,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/dspaper"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="15dp"
@@ -129,8 +123,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/dsbook"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="2dp"
@@ -165,8 +159,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/dsnotes"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="65dp"

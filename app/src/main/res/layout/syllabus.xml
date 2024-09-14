@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Syllabus">
+    tools:context="com.example.bcaguide.main.Syllabus">
 
-        <com.github.barteksc.pdfviewer.PDFView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20sp"
-            android:id="@+id/pdfviewer"
-            />
+
+
+       <WebView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+               android:id="@+id/webview"/>
 
 </RelativeLayout>

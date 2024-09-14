@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Sem.SEM5.DMATH.D_math_paper">
+    tools:context="Sem.SEM5.DMATH.D_math_paper_2018">
 
     <WebView
         android:layout_width="match_parent"

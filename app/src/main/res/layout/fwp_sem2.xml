@@ -13,28 +13,22 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:layout_height="140dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginBottom="9dp"
-            android:fontFamily="serif"
-            android:text="Fundamental Web Programming"
-            android:textSize="35sp"
-            android:textStyle="bold|italic" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="272dp"
-            android:layout_height="151dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="30dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/working" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="42dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/fundamental_web_programming"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold|italic" />
+
 
     </RelativeLayout>
 
@@ -54,9 +48,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/fwppaper"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
-
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/fwpbook"
@@ -92,8 +85,8 @@
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/fwpbook"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="30dp"
