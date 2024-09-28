@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bcaguide">
+    package="com.ak.bcaguide">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,10 +20,10 @@
         android:supportsRtl="true"
         android:theme="@style/home">
         <activity
-            android:name=".Sem.SEM5.DMATH.D_math_paper_2021"
+            android:name="com.ak.bcaguide.Sem.SEM5.DMATH.D_math_paper_2021"
             android:exported="false" />
         <activity
-            android:name=".Sem.SEM5.DMATH.Dmathpaper"
+            android:name="com.ak.bcaguide.Sem.SEM5.DMATH.Dmathpaper"
             android:exported="false" />
 
 
@@ -32,48 +32,58 @@
 
         <!-- Login -->
         <activity
-            android:name=".Loginf"
+            android:name="com.ak.bcaguide.Loginf"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
-            android:name=".ForgetPasswordf"
+            android:name="com.ak.bcaguide.ForgetPasswordf"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
-            android:name=".Registrationf"
+            android:name="com.ak.bcaguide.Registrationf"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
-            android:name=".Profilef"
+            android:name="com.ak.bcaguide.Profilef"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
-            android:name=".main.Syllabus"
+            android:name="com.ak.bcaguide.main.Syllabus"
             android:exported="false"
             android:noHistory="true"/>
         <activity
             android:name="Sem.SEM6.VB_Net.vb_book"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM6.VB_Net.vb_paper"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM6.E_commerce.Ecom_book"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM6.E_commerce.Ecom_paper"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM6.CGMA6.Cgma_book"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM6.CGMA6.Cgma_paper"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.Paper_study_notes.sem6.VB_net"
@@ -92,22 +102,27 @@
         <activity
             android:name="Sem.SEM5.PHP.php_book"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM5.PHP.php_paper"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM5.JAVA.java_book"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM5.JAVA.java_paper"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.Paper_study_notes.sem5.PHP"
             android:exported="false"
+
             android:screenOrientation="portrait" />
         <activity
             android:name="Sem.Paper_study_notes.sem5.JAVA"
@@ -124,6 +139,7 @@
         <activity
             android:name="Sem.SEM5.DMATH.D_math_book"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/full_screen" />
         <activity
             android:name="Sem.SEM5.CN.cn_notes"
@@ -433,15 +449,15 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Home"
+            android:name="com.ak.bcaguide.Home"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/mainhome" />
         <activity
-            android:name=".main.Flash_screen"
+            android:name="com.ak.bcaguide.main.Flash_screen"
             android:exported="true"
             android:noHistory="true"
-            android:screenOrientation="fullSensor"
+            android:screenOrientation="portrait"
             android:theme="@style/flash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

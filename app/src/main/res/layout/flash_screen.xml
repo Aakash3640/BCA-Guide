@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#12345E"
-    tools:context="com.example.bcaguide.main.Flash_screen">
+    tools:context="com.ak.bcaguide.main.Flash_screen">
 
 
     <TextView

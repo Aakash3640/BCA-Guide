@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/light_background"
     android:backgroundTint="@null"
-    tools:context="com.example.bcaguide.Loginf">
+    tools:context="com.ak.bcaguide.Loginf">
 
 
     <soup.neumorphism.NeumorphCardView

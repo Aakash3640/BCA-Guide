@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/neumorphism_background"
     android:padding="@dimen/_minus20sdp"
-    tools:context="com.example.bcaguide.Home">
+    tools:context="com.ak.bcaguide.Home">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
