@@ -4,7 +4,7 @@
     <string name="create">Create Account
     </string>
     <string name="bca_guide">Bca Guide</string>
-    <string name="bca_paper_book_notes">BCA Paper, Book, Notes</string>
+    <string name="bca_paper_book_notes">Book, Notes, Paper, Practical Files</string>
     <string name="learnfworld_blogspot_com">Learnfworld.blogspot.com</string>
     <string name="website">WebSite</string>
     <string name="bca_syllabus">BCA Syllabus</string>
@@ -55,13 +55,41 @@
     <string name="isd"><![CDATA[Information System\nDesign & Implementation]]></string>
     <string name="os">Operating System\nConcepts and Linux</string>
     <string name="php">Application Development using\nPHP</string>
-    <string name="fwp">Fundamental Web Programming</string>
+    <string name="fwp">   Fundamental \nWeb Programming</string>
     <string name="practical_file">Practical File</string>
     <string name="todo">TODO</string>
     <string name="phone">Phone</string>
     <string name="pass">Password</string>
     <string name="login">Login</string>
     <string name="home">Home</string>
+    <string name="english_compulsary">English Compulsary</string>
+    <string name="discrete_mathematics">   Discrete \nMathematics</string>
+    <string name="facebook_icon">facebook logo\n</string>
+    <string name="googleplus_icon">googleplus logo</string>
+    <string name="google_icon">google logo\n</string>
+    <string name="image_user">user logo</string>
+    <string name="computer_fundamentals_and_computing_software">Computer Fundamentals and Computing Software</string>
+    <string name="c">C</string>
+    <string name="c_programming">C Programming</string>
+    <string name="english">English</string>
+    <string name="statistics">Statistics</string>
+    <string name="mathematical_statistics">Mathematical Statistics</string>
+    <string name="cfcs">CFCS</string>
+    <string name="data_structure">Data Structure</string>
+    <string name="pratical_file">Pratical File</string>
+    <string name="ds_basic_code">DS Basic Code</string>
+    <string name="sample_paper">Sample Paper</string>
+    <string name="book">Book</string>
+    <string name="study_material">Study Material</string>
+    <string name="notes">Notes</string>
+    <string name="handwritten_notes">Handwritten Notes</string>
+    <string name="english_1st_sem">English 1st Sem</string>
+    <string name="english_2nd_sem">English 2nd Sem</string>
+    <string name="java">JAVA</string>
+    <string name="statistics_1st_sem">Statistics 1st Sem</string>
+    <string name="application_ndevelopment_nusing_nvb_net">Application\nDevelopment\nUsing\nVB.Net</string>
+    <string name="software_nproject_nmanagement">Software \nProject \nManagement</string>
+    <string name="punjabi_sem_4">Punjabi Sem 4</string>
 
 
 </resources>

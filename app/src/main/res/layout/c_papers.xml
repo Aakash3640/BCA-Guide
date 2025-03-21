@@ -1,76 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/neumorphism_background"
     tools:context="Sem.SEM1.C.Paper.C_papers">
 
 
-    <soup.neumorphism.NeumorphCardView
-        android:id="@+id/paper2017"
-        android:layout_width="257dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="89dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:padding="20sp"
-            android:text="2017    Paper"
-            android:textSize="40sp" />
-    </soup.neumorphism.NeumorphCardView>
-
-    <soup.neumorphism.NeumorphCardView
-        android:id="@+id/paper2018"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="295dp"
-        android:layout_marginEnd="92dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:padding="20sp"
-            android:text="2018    Paper"
-            android:textSize="40sp" />
-    </soup.neumorphism.NeumorphCardView>
-
-    <soup.neumorphism.NeumorphCardView
-        android:id="@+id/paper2020dec"
-        android:layout_width="wrap_content"
-        android:layout_height="155dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="513dp"
-        android:layout_marginEnd="99dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:padding="20sp"
-            android:text="2020     Dec    Paper"
-            android:textSize="30sp" />
-    </soup.neumorphism.NeumorphCardView>
 
 
-</RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="1"
+        android:layout_margin="@dimen/_40sdp"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- Card 1 - -->
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:id="@+id/paper2017"
+            android:layout_rowWeight="1"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="2017 Paper"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <!-- Card 2 -  -->
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/paper2018"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="2018 Paper"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <!-- Card 3 -  -->
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/paper2020dec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="2020 Paper"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

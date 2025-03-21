@@ -25,7 +25,7 @@ class Flash_screen : AppCompatActivity() {
             val i = Intent(this@Flash_screen, Loginf::class.java)
             startActivity(i)
             Animatoo.animateInAndOut(this@Flash_screen)
-        },4000)
+        },2000)
 
 
 

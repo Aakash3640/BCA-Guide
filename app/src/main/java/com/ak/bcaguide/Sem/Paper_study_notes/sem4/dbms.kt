@@ -31,7 +31,7 @@ class dbms : AppCompatActivity() {
 
         }
 
-        val praticalfile = findViewById<NeumorphCardView>(R.id.praticalfile)
+        val praticalfile = findViewById<NeumorphCardView>(R.id.practicalfile)
         praticalfile.setOnClickListener {
             startActivity(Intent(this,dbms_practical_File::class.java))
             Animatoo.animateZoom(this)

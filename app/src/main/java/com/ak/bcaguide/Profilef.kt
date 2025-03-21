@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 import android.widget.TextView
 import android.widget.Toast
@@ -19,8 +20,12 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 
 import com.squareup.picasso.RequestCreator
+import org.w3c.dom.Text
 
 import soup.neumorphism.NeumorphButton
+
+
+
 
 
 
@@ -28,7 +33,7 @@ import soup.neumorphism.NeumorphButton
 class Profilef : AppCompatActivity(){
 
     lateinit var pname:TextView
-    lateinit var pemail:TextView
+   lateinit var pemail:TextView
     lateinit var pphone:TextView
 
     var back : NeumorphButton?=null
@@ -39,7 +44,7 @@ class Profilef : AppCompatActivity(){
 
 
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profilef)
@@ -50,11 +55,11 @@ class Profilef : AppCompatActivity(){
         pphone = findViewById(R.id.pphone)
         back = findViewById(R.id.back)
 
-    back?.setOnClickListener {
+        back?.setOnClickListener {
 
-        startActivity(Intent(this,Home::class.java))
-        this.finish()
-    }
+            startActivity(Intent(this,Home::class.java))
+            this.finish()
+        }
 
         firebaseAuth = FirebaseAuth.getInstance()
         firebaseStorage = FirebaseStorage.getInstance()
@@ -63,29 +68,38 @@ class Profilef : AppCompatActivity(){
 
 
         val databaseReference = FirebaseDatabase.getInstance().getReference("Users")
-        databaseReference.addValueEventListener(object : ValueEventListener {
+        val userid = FirebaseAuth.getInstance().currentUser?.uid
+        databaseReference.child(userid!!).get().addOnSuccessListener {
 
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@Profilef,"No Database Exist",Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@Profilef,Profilef::class.java))
+            if (it.exists()) {
+
+                // Try to get data from the "name", "email", "phone" fields
+                var name = it.child("name").value
+                var email = it.child("email").value
+                var phone = it.child("phone").value
+
+                // If data does not exist in "name", "email", "phone", check "a", "b", "c"
+                if (name == null || email == null || phone == null) {
+                    name = it.child("a").value
+                    email = it.child("b").value
+                    phone = it.child("c").value
+                }
+                pname.text = "Name: $name"
+                pemail.text = "Email: $email"
+                pphone.text = "Phone: $phone"
+
+
+            } else {
+                Toast.makeText(this, "User doesn't exists", Toast.LENGTH_SHORT).show()
             }
-            @SuppressLint("SetTextI18n")
-            override fun onDataChange(snapshot: DataSnapshot) {
+        }.addOnFailureListener {
 
-                
-                val userprofile = snapshot.getValue(User::class.java)
+            Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
 
-                
-                pname.text = "Name:   "+userprofile?.name
-                pemail.text = "Email:   "+userprofile?.email
-                pphone.text = "Phone:   "+userprofile?.phone
+        }
 
 
 
-            }
-
-
-        })
     }
 
 }
@@ -98,4 +112,5 @@ fun RequestCreator.into(userimage: CardView?): CardView? {
     return userimage
 
 }
+
 

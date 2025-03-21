@@ -32,7 +32,7 @@ class ds : AppCompatActivity() {
 
         }
 
-        val praticalfile = findViewById<NeumorphCardView>(R.id.dspraticalfile)
+        val praticalfile = findViewById<NeumorphCardView>(R.id.dspracticalfile)
         praticalfile.setOnClickListener {
             startActivity(Intent(this, ds_practical_file::class.java))
             Animatoo.animateZoom(this)

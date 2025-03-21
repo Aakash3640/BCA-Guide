@@ -6,41 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_background"
-    android:backgroundTint="@null"
     tools:context="com.ak.bcaguide.Loginf">
-
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/neumorphCardView"
         style="@style/Widget.Neumorph.CardView"
-        android:layout_width="370sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:neumorph_shapeType="flat">
-
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="90sp"
-            android:layout_height="90sp"
-            android:layout_marginStart="220sp"
-            android:layout_marginTop="30sp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/user"
-            android:contentDescription="@string/todo" />
-
+            android:contentDescription="@string/image_user" />
 
         <TextView
             android:id="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="60sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="monospace"
             android:text="@string/welcome"
             android:textColor="#061575"
@@ -50,18 +41,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="100sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
             android:fontFamily="sans-serif"
             android:text="@string/login"
-            android:textColor="#6D6E70"
+            android:textColor="#8A8A8A"
             android:textSize="30sp" />
 
         <soup.neumorphism.NeumorphCardView
-            android:layout_width="320sp"
-            android:layout_height="90sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="160sp"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="160dp"
             app:neumorph_shapeType="pressed">
 
             <EditText
@@ -71,20 +62,18 @@
                 android:background="@null"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:paddingStart="20sp"
+                android:paddingStart="20dp"
                 android:textColor="@color/black"
                 android:textColorHint="#000000"
                 android:textCursorDrawable="@color/black"
-                android:autofillHints=""
-                tools:ignore="RtlSymmetry" />
-
+                android:autofillHints="emailAddress" />
         </soup.neumorphism.NeumorphCardView>
 
         <soup.neumorphism.NeumorphCardView
-            android:layout_width="320sp"
-            android:layout_height="90sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="240sp"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="240dp"
             app:neumorph_shapeType="pressed">
 
             <EditText
@@ -94,105 +83,57 @@
                 android:background="@null"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:paddingStart="20sp"
+                android:paddingStart="20dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
-                tools:ignore="RtlSymmetry"
-                android:autofillHints="" />
-
+                android:autofillHints="password" />
         </soup.neumorphism.NeumorphCardView>
-
 
         <soup.neumorphism.NeumorphButton
             android:id="@+id/signin"
             style="@style/ShapeAppearance.Neumorph.Button"
-            android:layout_width="150sp"
-            android:layout_height="80sp"
-            android:layout_marginStart="160sp"
-            android:layout_marginTop="330sp"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="330dp"
             android:gravity="center"
+
             android:text="@string/sign_in"
             android:textColor="#061575"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-
-
         <soup.neumorphism.NeumorphButton
             android:id="@+id/forget"
             style="@style/ShapeAppearance.Neumorph.Button"
-            android:layout_width="140sp"
-            android:layout_height="70sp"
-            android:layout_marginStart="10sp"
-            android:layout_marginTop="340sp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="340dp"
             android:gravity="center"
             android:text="@string/forget_password"
             android:textColor="#F44336"
-            android:textSize="13sp"
-             />
-
-
-
+            android:textSize="13sp" />
 
         <soup.neumorphism.NeumorphButton
             android:id="@+id/createuser"
             style="@style/ShapeAppearance.Neumorph.Button"
-            android:layout_width="150sp"
-            android:layout_height="80sp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="540sp"
+            android:layout_marginTop="@dimen/_340sdp"
+
             android:gravity="center"
             android:text="@string/create"
             android:textColor="#061575"
             android:textSize="13sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/_30sdp"/>
+            android:textStyle="bold" />
 
-        <soup.neumorphism.NeumorphCardView
-            android:id="@+id/google"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:layout_marginStart="50sp"
-            android:layout_marginTop="460sp">
 
-            <ImageView
 
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/search"
-                android:contentDescription="@string/todo" />
-        </soup.neumorphism.NeumorphCardView>
 
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:id="@+id/facebook"
-            android:layout_marginStart="140sp"
-            android:layout_marginTop="460sp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/facebook"
-                android:contentDescription="@string/todo" />
-        </soup.neumorphism.NeumorphCardView>
-
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="70sp"
-            android:id="@+id/googleplus"
-            android:layout_height="70sp"
-            android:layout_marginStart="220sp"
-            android:layout_marginTop="460sp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/google_plus"
-                android:contentDescription="@string/todo" />
-        </soup.neumorphism.NeumorphCardView>
 
 
     </soup.neumorphism.NeumorphCardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

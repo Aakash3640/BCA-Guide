@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -65,6 +66,8 @@ class Registrationf : AppCompatActivity() {
 
 
 
+
+
         register?.setOnClickListener{
             registernow()
 
@@ -78,6 +81,12 @@ class Registrationf : AppCompatActivity() {
 
 
     }
+
+    override fun onBackPressed() {
+        startActivity(Intent(this,Loginf::class.java))
+        super.onBackPressed()
+    }
+
     fun registernow(){
         progressbar?.setMessage("Please Wait")
         progressbar?.show()
@@ -85,9 +94,9 @@ class Registrationf : AppCompatActivity() {
         val p = newpass?.text.toString()
 
 
-        uname = name.toString()
-        uemail = newuser.toString()
-        uphone = newphone.toString()
+        uname = name?.text.toString()
+        uemail = newuser?.text.toString()
+        uphone = newphone?.text.toString()
 
         if(e.isEmpty()|| p.isEmpty() || uname.isEmpty() || uemail.isEmpty()|| uphone.isEmpty()){
             progressbar?.dismiss()
@@ -100,7 +109,7 @@ class Registrationf : AppCompatActivity() {
                if(it.isSuccessful){
                    mailAuthentication()
                     sendData()
-//                   startActivity(Intent(this,Phone_Mainf::class.java))
+
 
                }
                 else{
@@ -147,26 +156,9 @@ class Registrationf : AppCompatActivity() {
 
 
 
-    fun sendData(){
+    private fun sendData(){
 
 
-
-
-//        val uname = findViewById<TextView>(R.id.pname).text.toString()
-//        val uemail = findViewById<TextView>(R.id.pemail).text.toString()
-//        val uphone = findViewById<TextView>(R.id.pphone).text.toString()
-//
-//
-//        databaseReference = bcaguideDatabase.getInstance().getReference("Users")
-//
-//        val user = User(uname,uemail,uphone)
-//
-//        databaseReference.child(uname).setValue(user).addOnCompleteListener {
-//            Toast.makeText(this,"Successfully saved",Toast.LENGTH_SHORT).show()
-//        }.addOnFailureListener {
-//            Toast.makeText(this,"Error in sendData()",Toast.LENGTH_SHORT).show()
-//
-//        }
 
         name = findViewById(R.id.name)
         newphone = findViewById(R.id.newphone)
@@ -179,10 +171,19 @@ class Registrationf : AppCompatActivity() {
         uphone = newphone!!.text.toString()
 
 
-        val myreference = FirebaseDatabase.getInstance().getReference("Users")
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users")
         val userProfile = User(uname,uemail,uphone)
-        myreference.setValue(userProfile)
+        val userid = FirebaseAuth.getInstance().currentUser?.uid
+        databaseReference.child(userid!!).setValue(userProfile)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Log.d("Firebase", "User data saved successfully")
+                } else {
+                    Log.e("Firebase", "Error saving user data", task.exception)
+                }
+            }
 
+        Log.d("UserData", "Name: $uname, Email: $uemail, Phone: $uphone")
 
     }
 

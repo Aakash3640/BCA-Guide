@@ -1,192 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Sem.Sem5">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="Sem.Sem1"
+    android:background="@color/neumorphism_background">
 
-    <RelativeLayout
-        android:id="@+id/first"
+
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="260sp">
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/_5th_sem"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:padding="16dp" />
 
+    <!-- GridLayout for Neumorphism Cards -->
 
-        <TextView
-            android:layout_width="327dp"
-            android:layout_height="175dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="49dp"
-            android:layout_marginEnd="65dp"
-            android:layout_marginBottom="36dp"
-            android:fontFamily="serif"
-            android:text="@string/_5th_sem"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:textStyle="bold|italic" />
-
-
-    </RelativeLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/first"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="3dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
 
+        <!-- Card 1 -  -->
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/cn"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginTop="80dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/ejava"
-            app:layout_constraintEnd_toStartOf="@+id/dm"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:neumorph_backgroundColor="#3EC11A">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="cursive"
-                android:gravity="center"
-                android:text="CN"
-                android:textColor="#000000"
-                android:textSize="50sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:gravity="center">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="CN"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130sp"
-                android:gravity="center"
-                android:text="Computer Network"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Computer Network"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </soup.neumorphism.NeumorphCardView>
 
-
+        <!-- Card 2 -  -->
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/dm"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginTop="80dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/php"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cn"
-            app:layout_constraintTop_toTopOf="parent"
-            app:neumorph_backgroundColor="#1E88E5">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
 
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
-                android:fontFamily="cursive"
-                android:gravity="center_horizontal"
-                android:text="DM"
-                android:textColor="#000000"
-                android:textSize="50sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="140sp"
-                android:gravity="center"
-                android:text="Discrete Mathematics"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="DM"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Discrete Mathematics"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
         </soup.neumorphism.NeumorphCardView>
 
-
+        <!-- Card 3 -  -->
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/ejava"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginBottom="65dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/php"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cn"
-            app:neumorph_backgroundColor="#FB8C00">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="cursive"
-                android:gravity="center"
-                android:text="JAVA"
-                android:textColor="#000000"
-                android:textSize="43sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:gravity="center">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="JAVA"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="120sp"
-                android:gravity="center"
-                android:text="Java Programming"
-                android:textColor="#000000"
-                android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Java Programming"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
         </soup.neumorphism.NeumorphCardView>
 
-
+        <!-- Card 4 -  -->
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/php"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="65dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ejava"
-            app:layout_constraintTop_toBottomOf="@+id/dm"
-            app:neumorph_backgroundColor="#E53935">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/neumorphism_background">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="cursive"
-                android:gravity="center"
-                android:text="PHP"
-                android:textColor="#000000"
-                android:textSize="50sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:gravity="center">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="PHP"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130sp"
-                android:gravity="center"
-                android:text="Web Application Development using PHP"
-                android:textColor="#000000"
-                android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:gravity="center"
+                    android:text="Web Application Development using PHP"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
         </soup.neumorphism.NeumorphCardView>
 
+    </GridLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</RelativeLayout>
+</LinearLayout>

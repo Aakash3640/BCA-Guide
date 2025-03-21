@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="createuser" type="id" />
+    <item name="neumorphCardView" type="id" />
+    <item name="welcome" type="id" />
+    <item name="email" type="id" />
+    <item name="password" type="id" />
+    <item name="signin" type="id" />
+    <item name="forget" type="id" />
 </resources>

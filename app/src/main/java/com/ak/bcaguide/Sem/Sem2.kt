@@ -38,6 +38,7 @@ class Sem2 : AppCompatActivity() {
         val co = findViewById<NeumorphCardView>(R.id.co)
         co.setOnClickListener {
             startActivity(Intent(this, Co_sem2::class.java))
+            Animatoo.animateZoom(this)
         }
 
         val fwp = findViewById<NeumorphCardView>(R.id.fwp)

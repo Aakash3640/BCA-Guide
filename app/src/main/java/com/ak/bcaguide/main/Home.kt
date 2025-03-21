@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 
 import android.widget.Toast
 import androidx.cardview.widget.CardView
@@ -37,7 +38,6 @@ class Home : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-
         one = findViewById(R.id.a)
         two = findViewById(R.id.b)
         three = findViewById(R.id.c)
@@ -53,7 +53,7 @@ class Home : AppCompatActivity() {
         syllabus.setOnClickListener {
             startActivity(Intent(this, Syllabus::class.java))
             Animatoo.animateZoom(this)
-            this.finish()
+
         }
 
         firebase = FirebaseAuth.getInstance()
@@ -75,7 +75,6 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this, Profilef::class.java))
             Animatoo.animateShrink(this)
 
-            this.finish()
 
         }
 
@@ -84,42 +83,42 @@ class Home : AppCompatActivity() {
 
             startActivity(Intent(this, Sem1::class.java))
             Animatoo.animateShrink(this)
-            this.finish()
+
 
         }
         two?.setOnClickListener {
 
             startActivity(Intent(this, Sem2::class.java))
             Animatoo.animateShrink(this)
-            this.finish()
+
 
         }
         three?.setOnClickListener {
 
             startActivity(Intent(this, Sem3::class.java))
             Animatoo.animateShrink(this)
-            this.finish()
+
 
         }
         four?.setOnClickListener {
 
             startActivity(Intent(this, Sem4::class.java))
             Animatoo.animateShrink(this)
-            this.finish()
+
 
         }
         five?.setOnClickListener {
 
             startActivity(Intent(this, Sem5::class.java))
             Animatoo.animateShrink(this)
-            this.finish()
+
 
         }
         six?.setOnClickListener {
 
             startActivity(Intent(this, Sem6::class.java))
             Animatoo.animateShrink(this)
-            this.finish()
+
 
         }
 

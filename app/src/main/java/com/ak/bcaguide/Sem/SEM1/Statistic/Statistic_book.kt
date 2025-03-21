@@ -14,7 +14,7 @@ class Statistic_book : AppCompatActivity() {
         val webview = findViewById<WebView>(R.id.webview)
 
 
-        val pdf = "https://drive.google.com/file/d/10xTpBhEj-Eo7XuukFmm3bsaZoCDlkIoV/view?usp=drivesdk"
+        val pdf = "https://drive.google.com/file/d/10xTpBhEj-Eo7XuukFmm3bsaZoCDlkIoV/view?usp=sharing"
         webview.getSettings().setSupportZoom(true)
         webview.getSettings().setJavaScriptEnabled(true)
         webview.loadUrl(pdf)

@@ -30,6 +30,7 @@
             app:cardBackgroundColor="#FFEB3B"
             app:cardCornerRadius="30sp"
             app:cardElevation="6dp"
+            android:labelFor="@+id/logoutuser"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/syllbus"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +54,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="4dp"
+            android:labelFor="@+id/profile"
             app:cardBackgroundColor="#000000"
             app:cardCornerRadius="50sp"
             app:cardElevation="5sp"
@@ -93,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:fontFamily="cursive"
                 android:text="@string/bca_syllabus"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_17sdp" />
@@ -106,7 +109,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/one"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/one">
 
@@ -126,11 +129,12 @@
             app:layout_constraintVertical_bias="0.426">
 
             <TextView
-                android:layout_width="160sp"
-                android:layout_height="160sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/_1st_sem"
+                android:fontFamily="cursive"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_30ssp" />
 
@@ -138,7 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="65sp"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="cursive"
                 android:gravity="center"
                 android:text="@string/c_cs_english_statistic"
                 android:textColor="@color/black"
@@ -155,17 +159,17 @@
             app:cardCornerRadius="100sp"
             app:cardElevation="10sp"
             app:layout_constraintBottom_toTopOf="@+id/d"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/a"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.426">
 
             <TextView
-                android:layout_width="160sp"
-                android:layout_height="160sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:fontFamily="cursive"
                 android:text="@string/_2nd_sem"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_28ssp" />
@@ -174,7 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="65sp"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="cursive"
                 android:gravity="center"
                 android:text="@string/c_co_english_fwp"
                 android:textColor="@color/black"
@@ -198,11 +202,12 @@
             app:layout_constraintTop_toBottomOf="@+id/a">
 
             <TextView
-                android:layout_width="160sp"
-                android:layout_height="160sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/_3rd_sem"
+                android:fontFamily="cursive"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_30ssp" />
 
@@ -210,9 +215,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="65sp"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="cursive"
                 android:gravity="center"
-                android:text="CONM, DS, HCP, ISD"
+                android:text="@string/conm_ds_hcp_isd"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
         </androidx.cardview.widget.CardView>
@@ -235,10 +240,11 @@
             app:layout_constraintTop_toBottomOf="@+id/b">
 
             <TextView
-                android:layout_width="160sp"
-                android:layout_height="160sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:fontFamily="cursive"
                 android:text="@string/_4th_sem"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_30ssp" />
@@ -247,9 +253,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="65sp"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="cursive"
                 android:gravity="center"
-                android:text="DBMS, HCP, Os, Spm"
+                android:text="@string/dbms_hcp_os_spm"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
         </androidx.cardview.widget.CardView>
@@ -271,11 +277,12 @@
             app:layout_constraintTop_toBottomOf="@+id/c">
 
             <TextView
-                android:layout_width="160sp"
-                android:layout_height="160sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/_5th_sem"
+                android:fontFamily="cursive"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_30ssp" />
 
@@ -283,9 +290,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="65sp"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="cursive"
                 android:gravity="center"
-                android:text="CN, DM, JAVA, PHP"
+                android:text="@string/cn_dm_java_php"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
 
@@ -308,10 +315,11 @@
             app:layout_constraintTop_toBottomOf="@+id/d">
 
             <TextView
-                android:layout_width="160sp"
-                android:layout_height="160sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:fontFamily="cursive"
                 android:text="@string/_6th_sem"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_30ssp" />
@@ -320,9 +328,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="65sp"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="cursive"
                 android:gravity="center"
-                android:text="CGMA, EC, VB.Net"
+                android:text="@string/cgma_ec_vb_net"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
         </androidx.cardview.widget.CardView>

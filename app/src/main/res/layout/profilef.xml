@@ -38,7 +38,15 @@
     android:layout_marginTop="250sp"
     android:layout_marginStart="50sp"
     android:textStyle="bold"
-    android:textSize="20sp"/>
+    android:textSize="20sp">
+
+
+
+
+        </TextView>
+
+
+
 
 
 

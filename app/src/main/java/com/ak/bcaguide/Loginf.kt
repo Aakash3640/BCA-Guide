@@ -57,6 +57,8 @@ class Loginf : AppCompatActivity() {
             pass?.setHintTextColor(Color.BLACK)
         }
 
+
+
         btn.setOnClickListener {
             if(validate()){
                 startActivity(Intent(this,Home::class.java))
@@ -87,6 +89,7 @@ class Loginf : AppCompatActivity() {
             startActivity(Intent(this, ForgetPasswordf::class.java))
             Animatoo.animateShrink(this)
             this.finish()
+
         }
 
         // This will save your user id so that u don't login you ID
@@ -102,8 +105,10 @@ class Loginf : AppCompatActivity() {
         // Create User
         createuser?.setOnClickListener {
             startActivity(Intent(this, Registrationf::class.java))
-            Animatoo.animateShrink(this)
             this.finish()
+            Animatoo.animateShrink(this)
+
+
 
         }
 
@@ -196,4 +201,8 @@ class Loginf : AppCompatActivity() {
     }
 
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
 }
+

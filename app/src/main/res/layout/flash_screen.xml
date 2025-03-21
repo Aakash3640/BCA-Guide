@@ -58,6 +58,7 @@
         android:text="@string/bca_paper_book_notes"
         android:textColor="#F6E864"
         android:textSize="20sp"
+        android:fontFamily="cursive"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
