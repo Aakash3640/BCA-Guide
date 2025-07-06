@@ -169,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="8dp"
                     android:gravity="center"
-                    android:text="Info. System dEsign &amp; Implementation"
+                    android:text="Info. System Design &amp; Impl."
                     android:textColor="#000000"
                     android:textSize="16sp" />
             </LinearLayout>

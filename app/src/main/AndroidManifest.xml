@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ak.bcaguide">
+    package="local.ak.bcaguide"
+    >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
-
-
 
 
     <supports-screens
@@ -30,40 +27,46 @@
         android:theme="@style/home"
         tools:targetApi="n"
         tools:ignore="DiscouragedApi">
-        <activity
-            android:name="com.ak.bcaguide.Sem.SEM5.DMATH.D_math_paper_2021"
-            android:exported="false" />
-        <activity
-            android:name="com.ak.bcaguide.Sem.SEM5.DMATH.Dmathpaper"
-            android:exported="false" />
 
+
+
+        <activity
+            android:name="local.ak.bcaguide.Sem.SEM5.DMATH.D_math_paper_2021"
+            android:exported="false" />
+        <activity
+            android:name="local.ak.bcaguide.Sem.SEM5.DMATH.Dmathpaper"
+            android:exported="false" />
 
 
 
 
         <!-- Login -->
+
+
         <activity
-            android:name="com.ak.bcaguide.Loginf"
+            android:name="local.ak.bcaguide.Loginf"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:noHistory="true"/>
+            android:noHistory="true"
+
+            />
         <activity
-            android:name="com.ak.bcaguide.ForgetPasswordf"
+            android:name="local.ak.bcaguide.ForgetPasswordf"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.ak.bcaguide.Registrationf"
+            android:name="local.ak.bcaguide.Registrationf"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.ak.bcaguide.Profilef"
+            android:name="local.ak.bcaguide.Profilef"
             android:exported="true"
             android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
-            android:name="com.ak.bcaguide.main.Syllabus"
+            android:name="local.ak.bcaguide.main.Syllabus"
             android:exported="false"
             android:noHistory="true"/>
         <activity
@@ -228,7 +231,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Sem.Paper_study_notes.sem3.isd"
+            android:name=".Sem.Paper_study_notes.sem3.isd"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -244,7 +247,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Sem.SEM3.ISD.isd_notes"
+            android:name=".Sem.SEM3.ISD.isd_notes"
             android:exported="false"
             android:theme="@style/full_screen" />
         <activity
@@ -462,14 +465,14 @@
 
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ak.bcaguide.Home"
+            android:name="local.ak.bcaguide.main.Home"
             android:exported="true"
            android:resizeableActivity="true"
             android:screenOrientation="portrait"
             android:theme="@style/mainhome"
              />
         <activity
-            android:name="com.ak.bcaguide.main.Flash_screen"
+            android:name="local.ak.bcaguide.main.Flash_screen"
             android:exported="true"
             android:noHistory="true"
             android:configChanges="orientation"

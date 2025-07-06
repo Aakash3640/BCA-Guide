@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/neumorphism_background"
-    tools:context=".Sem.SEM5.DMATH.Dmathpaper">
+    tools:context="local.ak.bcaguide.Sem.SEM5.DMATH.Dmathpaper">
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/math_2018"

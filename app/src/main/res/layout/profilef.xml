@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/neumorphism_background"
     android:id="@+id/Profile"
-    tools:context="com.ak.bcaguide.Profilef">
+    tools:context="local.ak.bcaguide.Profilef">
 
 
 

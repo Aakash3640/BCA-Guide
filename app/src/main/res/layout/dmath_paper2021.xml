@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sem.SEM5.DMATH.D_math_paper_2021">
+    tools:context="local.ak.bcaguide.Sem.SEM5.DMATH.D_math_paper_2021">
 
     <WebView
         android:layout_width="match_parent"

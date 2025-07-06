@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/neumorphism_background"
     android:padding="@dimen/_minus20sdp"
-    tools:context="com.ak.bcaguide.Home">
+    tools:context="local.ak.bcaguide.main.Home">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,9 +38,10 @@
 
 
             <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:padding="@dimen/_6sdp"
                 android:src="@drawable/baseline_logout" />
 
 
@@ -111,6 +112,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/one"
         app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="@dimen/_50sdp"
         app:layout_constraintTop_toBottomOf="@+id/one">
 
 
@@ -119,9 +121,9 @@
             android:layout_width="@dimen/_130sdp"
             android:layout_height="@dimen/_130sdp"
             android:layout_marginStart="16dp"
-            app:cardBackgroundColor="#FBFBFA"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="100sp"
-            app:cardElevation="10sp"
+            app:cardElevation="6sp"
             app:layout_constraintBottom_toTopOf="@+id/c"
             app:layout_constraintEnd_toStartOf="@+id/b"
             app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +159,7 @@
             android:layout_marginEnd="16dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="100sp"
-            app:cardElevation="10sp"
+            app:cardElevation="6sp"
             app:layout_constraintBottom_toTopOf="@+id/d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/a"
@@ -194,7 +196,7 @@
             android:layout_marginBottom="132dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="100sp"
-            app:cardElevation="10sp"
+            app:cardElevation="6sp"
             app:layout_constraintBottom_toTopOf="@+id/e"
             app:layout_constraintEnd_toStartOf="@+id/d"
             app:layout_constraintHorizontal_bias="0.372"
@@ -233,7 +235,7 @@
             android:layout_marginBottom="24dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="100sp"
-            app:cardElevation="10sp"
+            app:cardElevation="6sp"
             app:layout_constraintBottom_toTopOf="@+id/f"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/c"
@@ -269,7 +271,7 @@
             android:layout_marginTop="44dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="100sp"
-            app:cardElevation="10sp"
+            app:cardElevation="6sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/f"
             app:layout_constraintHorizontal_bias="0.37"
@@ -308,7 +310,7 @@
             android:layout_marginEnd="4dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="100sp"
-            app:cardElevation="10sp"
+            app:cardElevation="6sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/e"

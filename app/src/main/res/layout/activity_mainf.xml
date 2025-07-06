@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_background"
-    tools:context="com.ak.bcaguide.Loginf">
+    tools:context="local.ak.bcaguide.Loginf">
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/neumorphCardView"

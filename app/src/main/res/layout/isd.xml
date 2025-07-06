@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context="Sem.Paper_study_notes.sem3.isd"
+    tools:context=".Sem.Paper_study_notes.sem3.isd"
     android:background="@color/neumorphism_background">
 
 
